@@ -1,21 +1,52 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Javascript Coding Quiz</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="styles.css" />
     </head>
 
     <body>
-        <div id="quiz">
-            <button id="start">Start!</button>
-        </div>
+        <section class="container">
+            <div id="questionContainer" class="hide">
+                <div id="question">Question</div>
+                <div id="answer-btn" class="btn-grid">
+                    <button class="btn">Answer 1</button>
+                    <button class="btn">Answer 2</button>
+                    <button class="btn">Answer 3</button>
+                    <button class="btn">Answer 4</button>
+                </div>
+            </div>
 
-        <div id="results">
-            
-        </div>
+            <footer id="correction"></footer>
 
-    <script src="script.js"></script>
+            <div class="control">
+                <button id="start-btn">Click here to start the Code Challenge!</button>
+            </div>
+
+            <form id="submit" class='hide'>
+                <p>Type in initials here to save your score:</p>
+                <input type="text" placeholder="Initials here" id="initials" name="user-text">
+                <button id="submitName">Submit</button>
+            </form> 
+
+            <div id="highscores" class="hide" method="POST">
+                <span><h2>Highscores</h2></span>
+                <ul id="score-list"></ul>
+                <button id="clear">Clear scores</button>
+                <button id="restart">Start Over</button>
+            </div>
+
+        </section>
+
+        <button id="viewScores">View Scores</button>
+
+        <div id="timerScore">Timer</div>
+
+
+
+
+    <script src="apps.js"></script>
     </body>
 </html>

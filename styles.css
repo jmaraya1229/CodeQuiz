@@ -1,0 +1,98 @@
+ *, *::before, *::after{
+     box-sizing: border-box;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+ }
+ 
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: lightskyblue;
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.btn-grid {
+    display: grid;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 10px 10px;
+}
+
+.btn {
+    border: 2px solid navy;
+    border-radius: 5px;
+    background-color: white;
+    text-align: left;
+}
+
+.btn:hover {
+    border-color: purple;
+    background-color: lightpink;
+}
+
+#start-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: lightskyblue;
+}
+
+.control {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display:none;
+}
+
+#correction {
+    opacity: 0.7;
+    font-style: italic;
+    display: block;
+    bottom: 0px;
+    left: 0px;
+}
+
+#viewScores {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: solid black 2px;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+#timerScore {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: solid black 2px;
+    background-color:white;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}

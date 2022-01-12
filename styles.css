@@ -1,7 +1,8 @@
  *, *::before, *::after{
      box-sizing: border-box;
-     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
- }
+     font-size: 20px;
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
  
 body {
     padding: 0;
@@ -40,6 +41,7 @@ body {
 .btn:hover {
     border-color: purple;
     background-color: lightpink;
+    cursor: pointer;
 }
 
 #start-btn {
@@ -71,8 +73,8 @@ body {
 #viewScores {
     display: block;
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 2%;
+    left: 1%;
     border: solid black 2px;
     background-color:white;
     border-radius: 5px;
@@ -83,8 +85,8 @@ body {
 #timerScore {
     display: block;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 2%;
+    right: 1%;
     border: solid black 2px;
     background-color:white;
     border-radius: 5px;
@@ -95,4 +97,9 @@ body {
 .submit {
     display: flex;
     justify-content: center;
+}
+
+.hover:hover {
+    cursor:pointer;
+    opacity: .75;
 }

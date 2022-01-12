@@ -1,4 +1,4 @@
-# CodeQuiz
+# Code Quiz
 
 ## Description
 The following webpage allows the user to participate in a timed coding quiz.
@@ -16,7 +16,7 @@ The following webpage allows the user to participate in a timed coding quiz.
 
 
 ## Screenshot
-![screenshot]
+![screenshot](Screenshot.png)
 
 ## Link
 * https://jmaraya1229.github.io/CodeQuiz/

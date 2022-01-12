@@ -176,12 +176,13 @@ const myQuestions = [
     },
 ]
 
-
+// variables for scores
 var initialsInput = document.querySelector("#initials");
 var submitForm = document.querySelector("#submit");
 var scoreList = document.querySelector("#score-list");
 var scores = [];
 
+// generates list for each submitted score
 function renderScores() {
   scoreList.innerHTML = "";
   for (var i = 0; i < scores.length; i++) {
@@ -193,6 +194,7 @@ function renderScores() {
   }
 }
 
+// init function stores scores on local storage
 function init() {
   var storedScores = JSON.parse(localStorage.getItem("scores"));
   if (storedScores !== null) {
@@ -201,10 +203,12 @@ function init() {
   renderScores();
 }
 
+// storage
 function storeScores() {
   localStorage.setItem("scores", JSON.stringify(scores));
-}+
+}
 
+// On click, store score
 submitForm.addEventListener("submit", function(event) {
   event.preventDefault();
 
@@ -221,6 +225,7 @@ submitForm.addEventListener("submit", function(event) {
   renderScores();
 });
 
+// clears scores on page and local storage
 function clearScores() {
     localStorage.clear();
     scores = [];
@@ -230,9 +235,10 @@ function clearScores() {
 
 init();
 
+// timer stuff
 var timeLeft = 20;
-function startTimer() {
 
+function startTimer() {
     var downloadTimer = setInterval(function() {
     if (timeLeft == null) {
         document.getElementById("timerScore").innerHTML = "Finished";
@@ -257,6 +263,7 @@ function startTimer() {
     }, 1000);
 }
 
+// score subtraction function
 function subtractTime() {
     timeLeft -= 1;
 }

@@ -14,9 +14,11 @@ The following webpage allows the user to participate in a timed coding quiz.
     * The user is able to see their previous scores after they complete the quiz if they chose to not clear their scores before restarting the quiz. 
 * If the user clicks the "View Scores" button at any time before or during the quiz, the timer will stop and they will be taken to the score page. 
 
+## Technologies used
 
-## Screenshot
-![screenshot](Screenshot.png)
+
+## Example
+![screenshot](CodingQuiz.gif)
 
 ## Link
 * https://jmaraya1229.github.io/CodeQuiz/

@@ -18,7 +18,7 @@ The following webpage allows the user to participate in a timed coding quiz.
 
 
 ## Example
-![screenshot](CodingQuiz.gif)
+![screenshot](./Assets/IMAGES/CodingQuiz.gif)
 
 ## Link
 * https://jmaraya1229.github.io/CodeQuiz/
